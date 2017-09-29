@@ -1,15 +1,14 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: whitesmoke;
-}
-
-a {
-  color: #00B7FF;
 }
 
 .center {
   text-align: center;
+}
+
+.pure-g:nth-child(2n-1) {
+  background-color: whitesmoke;
 }
 
 .pure-u-1,
@@ -60,4 +59,19 @@ a {
 .pure-u-24-24 {
   background-color: whitesmoke;
   margin-bottom: 5px;
+}
+
+.pure-menu-item {
+  height: 2em;
+}
+
+.vertical-scroll {
+  height: 10em;
+  width: 10em;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.horizontal-scroll {
+  width: 40em;
 }

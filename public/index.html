@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
+    <div class="center">
+        <h1>Exploration 2: The Pure.css Framework by Yahoo</h1>
+    </div>
     <h1>Pure Grid System</h1>
     <p>Similar to other frameworks like bootstrap, Pure includes a grid system to help developers get the perfect page layout. The Pure grid system is based on fractions instead of the number 12. It supports fractions with denominators of 2,3,4,5,6,8 and 24 for extremely specific separations. To use a grid, you must start with a div with class <b>.pure-g</b> (pure grid). Then for its children the grid layout can be specified with classes of <b>.pure-u-*</b> where <b>*</b> could be a fraction like <b>1-2</b> or <b>22-24</b>.</p>
 
@@ -218,5 +221,225 @@
         <button class="pure-button pure-button-active">Active Button</button>
         <button class="pure-button pure-button-primary">Primary Button</button>
     </div>
+
+    <div>
+        <h1>Pure Tables</h1>
+        <p>In Pure, tables are declared with the class <b>pure-table</b>. There are three subtypes of tables including bordered tables with the class <b>pure-table-bordered</b>, horizontal border tables with the class <b>pure-table-horizontal</b>, and striped tables with the class <b>pure-table-striped</b>.</p>
+
+        <h3>Table Examples:</h3>
+        <p>The default table with class <b>pure-table</b>:</p>
+        <table class="pure-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Fruit</th>
+                    <th>Color</th>
+                    <th>Smoothies?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Banana</td>
+                    <td>Yellow</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Strawberry</td>
+                    <td>Red</td>
+                    <td>Absolutely</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Orange</td>
+                    <td>Orange</td>
+                    <td>Please don't</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Add borders with the <b>pure-table-bordered</b> class:</p>
+        <table class="pure-table pure-table-bordered">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Fruit</th>
+                    <th>Color</th>
+                    <th>Smoothies?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Banana</td>
+                    <td>Yellow</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Strawberry</td>
+                    <td>Red</td>
+                    <td>Absolutely</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Orange</td>
+                    <td>Orange</td>
+                    <td>Please don't</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>To get a table with horizontal borders use the class <b>pure-table-horiztonal</b>:</p>
+        <table class="pure-table pure-table-horizontal">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Fruit</th>
+                    <th>Color</th>
+                    <th>Smoothies?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Banana</td>
+                    <td>Yellow</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Strawberry</td>
+                    <td>Red</td>
+                    <td>Absolutely</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Orange</td>
+                    <td>Orange</td>
+                    <td>Please don't</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>To get a table with stripes use the class <b>pure-table-striped</b></p>
+        <table class="pure-table pure-table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Fruit</th>
+                    <th>Color</th>
+                    <th>Smoothies?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Banana</td>
+                    <td>Yellow</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Strawberry</td>
+                    <td>Red</td>
+                    <td>Absolutely</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Orange</td>
+                    <td>Orange</td>
+                    <td>Please don't</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <hr>
+
+    <div>
+        <h1>Pure Menus</h1>
+        <p>In Pure, menus are vertical unless a different class is set. As a good warning, they do take up their whole container, so if you use a default menu and don't setup a custom class for the width it will take up as much space as possible. Pure recommends setting the restricted width using a display: inline-block; CSS style. That way, the menu will only ever take up its needed space. Pure has a lot of options while keeping to the basic. supports vertical menues, horizontal menus, and scrollable menus. It also supports adding active or disabled items and dropdowns. To use a menu in Pure, declare a div with the class <b>pure-menu</b>. Most menus should also have a span with a class <b>pure-menu-heading</b>. To add items into the menu, add a unordered list with class <b>pure-menu-list</b> with items of class <b>pure-menu-item</b> and links of class <b>pure-menu-link</b>.</p>
+
+        <p>The default vertical list with class <b>pure-menu</b>:</p>
+        <div class="pure-menu" style="width: 10em;">
+            <span class="pure-menu-heading">Exploration 2</span>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 1</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 2</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 3</a></li>
+            </ul>
+        </div>
+
+        <p>A scrollable vertical menu with class <b>pure-menu-scrollable</b> and a custom class <b>vertical-scroll</b>:</p>
+        <div class="pure-menu pure-menu-scrollable vertical-scroll">
+            <span class="pure-menu-heading">Exploration 2</span>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 1</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 2</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 3</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 4</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 5</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 6</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 7</a></li>
+            </ul>
+        </div>
+
+        <p>The horizontal list by adding class <b>pure-menu-horizontal</b>:</p>
+        <div class="pure-menu pure-menu-horizontal">
+            <span class="pure-menu-heading">Exploration 2</span>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 1</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 2</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 3</a></li>
+            </ul>
+        </div>
+
+        <p>A scrollable horizontal list by adding class <b>pure-menu-scrollable</b> and custom class to limit width <b>horizontal-scroll</b>:</p>
+        <div class="pure-menu pure-menu-horizontal pure-menu-scrollable horizontal-scroll">
+            <span class="pure-menu-heading">Exploration 2</span>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 1</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 2</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 3</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 4</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 5</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 6</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 7</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 8</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 9</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 10</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 11</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 12</a></li>
+            </ul>
+        </div>
+
+        <p>To show an item as selected or disabled, use the <b>pure-menu-selected</b> or <b>pure-menu-disabled</b> classes:</p>
+        <div class="pure-menu pure-menu-horizontal">
+            <span class="pure-menu-heading">Exploration 2</span>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item pure-menu-selected"><a href="" class="pure-menu-link">Item 1</a></li>
+                <li class="pure-menu-item pure-menu-disabled"><a href="" class="pure-menu-link">Item 2</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 3</a></li>
+            </ul>
+        </div>
+
+        <p>To add a dropdown, use the class <b>pure-menu-has-children</b> and <b>pure-menu-allow-hover</b> on a list item and then start an unordered list with class <b>pure-menu-children</b>:</p>
+        <div class="pure-menu pure-menu-horizontal">
+            <span class="pure-menu-heading">Exploration 2</span>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item pure-menu"><a href="" class="pure-menu-link">Item 1</a></li>
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover"><a href="" class="pure-menu-link">Item 2</a>
+                <ul class="pure-menu-children">
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">SubMenu Item 1</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">SubMenu Item 2</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">SubMenu Item 3</a></li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
 </body>
 </html>
