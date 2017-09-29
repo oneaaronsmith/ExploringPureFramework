@@ -1,1 +1,3 @@
 # Exploring Pure.css Framework
+
+For exploration 2, I decided to try to learn a new CSS framework called Pure.css to expand my knowledge outside of bootstrap. Pure was introduced by Yahoo and caught my attention since it brags on having a minimal data footprint, responsive modules for mobile first design, and great extendability. Since every class name starts with "pure-", it can avoid collisions with other frameworks, which makes it compatible with other frameworks if desired. Pure includes everything I need for a simple webpage and nothing more. I think Bootstrap is great for its large amount of documentation and seemingly endless componenents, but it has a much larger file size and I only ever ended up using perhaps 10% of its capabilities.
