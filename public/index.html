@@ -1,1 +1,446 @@
-Hello There!
+<DOCTYPE! html>
+<html>
+<head>
+    <title>Exploration 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/stylesheets/pure-min.css">
+    <link rel="stylesheet" href="/stylesheets/grids-responsive.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <div class="center">
+        <h1>Exploration 2: The Pure.css Framework by Yahoo</h1>
+    </div>
+    <h1>Pure Grid System</h1>
+    <p>Similar to other frameworks like bootstrap, Pure includes a grid system to help developers get the perfect page layout. The Pure grid system is based on fractions instead of the number 12. It supports fractions with denominators of 2,3,4,5,6,8 and 24 for extremely specific separations. To use a grid, you must start with a div with class <b>.pure-g</b> (pure grid). Then for its children the grid layout can be specified with classes of <b>.pure-u-*</b> where <b>*</b> could be a fraction like <b>1-2</b> or <b>22-24</b>.</p>
+
+    <h3>Example Grids:</h3>
+
+    <div class="pure-g center">
+        <div class="pure-u-1">1</div>
+
+        <div class="pure-u-1-2">1-2</div>
+        <div class="pure-u-1-2">1-2</div>
+
+        <div class="pure-u-1-3">1-3</div>
+        <div class="pure-u-1-3">1-3</div>
+        <div class="pure-u-1-3">1-3</div>
+
+        <div class="pure-u-1-4">1-4</div>
+        <div class="pure-u-1-4">1-4</div>
+        <div class="pure-u-1-4">1-4</div>
+        <div class="pure-u-1-4">1-4</div>
+
+        <div class="pure-u-1-5">1-5</div>
+        <div class="pure-u-1-5">1-5</div>
+        <div class="pure-u-1-5">1-5</div>
+        <div class="pure-u-1-5">1-5</div>
+        <div class="pure-u-1-5">1-5</div>
+
+        <div class="pure-u-1-6">1-6</div>
+        <div class="pure-u-1-6">1-6</div>
+        <div class="pure-u-1-6">1-6</div>
+        <div class="pure-u-1-6">1-6</div>
+        <div class="pure-u-1-6">1-6</div>
+        <div class="pure-u-1-6">1-6</div>
+
+        <div class="pure-u-1-8">1-8</div>
+        <div class="pure-u-1-8">1-8</div>
+        <div class="pure-u-1-8">1-8</div>
+        <div class="pure-u-1-8">1-8</div>
+        <div class="pure-u-1-8">1-8</div>
+        <div class="pure-u-1-8">1-8</div>
+        <div class="pure-u-1-8">1-8</div>
+        <div class="pure-u-1-8">1-8</div>
+
+        <div class="pure-u-1-24">1-24</div>
+        <div class="pure-u-1-24">1-24</div>
+        <div class="pure-u-1-24">1-24</div>
+        <div class="pure-u-1-24">1-24</div>
+        <div class="pure-u-1-24">1-24</div>
+        <div class="pure-u-1-24">1-24</div>
+        <div class="pure-u-1-24">1-24</div>
+        <div class="pure-u-1-24">1-24</div>
+        <div class="pure-u-1-24">1-24</div>
+        <div class="pure-u-1-24">1-24</div>
+        <div class="pure-u-1-24">1-24</div>
+        <div class="pure-u-1-24">1-24</div>
+        <div class="pure-u-1-24">1-24</div>
+        <div class="pure-u-1-24">1-24</div>
+        <div class="pure-u-1-24">1-24</div>
+        <div class="pure-u-1-24">1-24</div>
+        <div class="pure-u-1-24">1-24</div>
+        <div class="pure-u-1-24">1-24</div>
+        <div class="pure-u-1-24">1-24</div>
+        <div class="pure-u-1-24">1-24</div>
+        <div class="pure-u-1-24">1-24</div>
+        <div class="pure-u-1-24">1-24</div>
+        <div class="pure-u-1-24">1-24</div>
+        <div class="pure-u-1-24">1-24</div>
+    </div>
+
+    <h2>Responsive Grids</h2>
+    <p>Pure's Grid system is for mobile devices by default, but they can also become responsive through an extended css file called grids-responsive.css. This file includes more classes for letting grids respond to the device size. Pure breaks it down into categories of small (sm) for sizes 568px, medium (md) at 768px, large (lg) at 1024px, and extra large (xl) at 1280px. The class names are similar to the normal grid but include the screen size right before the fraction. (.pure-u-sm-*, .pure-u-md-*, .pure-u-lg-*, and .pure-u-xl-*)</p>
+
+    <h3>Example Responsive Grids (drag window to see changes)</h3>
+    <div class="pure-g center">
+        <div class="pure-u-1 pure-u-sm-1 pure-u-md-1-2 pure-lg-1-4">
+            Space 1
+        </div>
+        <div class="pure-u-1 pure-u-sm-1 pure-u-md-1-2 pure-lg-1-4">
+            Space 2
+        </div>
+        <div class="pure-u-1 pure-u-sm-1 pure-u-md-1-2 pure-lg-1-4">
+            Space 3
+        </div>
+        <div class="pure-u-1 pure-u-sm-1 pure-u-md-1-2 pure-lg-1-4">
+            Space 4
+        </div>
+
+    </div>
+
+    <hr>
+    <h1>Responsive Images</h1>
+    <p>Pure supports responsive images with the <b>.pure-img</b> class</p>
+    <img class="pure-img pure-u-1-2 center" src="/images/gecko.jpg">
+    
+    <hr>
+    <h1>Pure Forms</h1>
+    <p>Pure has three types of forms: default, stacked, and aligned. The default form is declared with the class <b>.pure-form</b> and is an inline version. The stacked formed helps create a nicer looking form with each element having its own row space. It is used with the class <b>pure-form-stacked</b>. The fanciest form is called aligned. It allows for the labels to be placed next to controls or revert on small screens. It is used with the class <b>pure-form-aligned</b>. It is also possible to combine grids with forms to have a multi column appearance.</p>
+
+    <h3>Form Examples</h3>
+    <p>The default form with class <b>pure-form</b></p>
+
+    <form class="pure-form">
+        <fieldset>
+            <input placeholder="First Name">
+            <input placeholder="Last Name">
+            <button type="submit" class="pure-button pure-button-primary">Submit</button>
+        </fieldset>
+    </form>
+
+    <p>The stacked form with class <b>pure-form-stacked</b></p>
+    <form class="pure-form pure-form-stacked">
+        <fieldset>
+            <label for="firstName">First Name</label>
+            <input id="firstName" placeholder="First Name">
+            <label for="lastName">Last Name</label>
+            <input id="lastName" placeholder="Last Name">
+            <button type="submit" class="pure-button pure-button-primary">Submit</button>
+        </fieldset>
+    </form>
+
+    <p>The aligned form with class <b>pure-form-aligned</b></p>
+    <form class="pure-form pure-form-aligned">
+        <fieldset>
+            <div class="pure-control-group">
+                <label for="firstName">First Name</label>
+                <input id="firstName" placeholder="First Name">
+            </div>
+            <div class="pure-control-group">
+                <label for="lastName">Last Name</label>
+                <input id="lastName" placeholder="Last Name">
+            </div>
+
+            <div class="pure-controls">
+                <button type="submit" class="pure-button pure-button-primary">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <p>Multi-column form using grids and stacked form</p>
+    <form class="pure-form pure-form-stacked">
+        <fieldset>
+            <div class="pure-g">
+                <div class="pure-u-1 pure-u-md-1-2">
+                    <label for="firstName">First Name</label>
+                    <input id="firstName" placeholder="First Name">
+                </div>
+
+                <div class="pure-u-1 pure-u-md-1-2">
+                    <label for="lastName">Last Name</label>
+                    <input id="lastName" placeholder="Last Name">
+                </div>
+
+                <button type="submit" class="pure-button pure-button-primary">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <h3>Input Styles</h3>
+    <p>Input sizing allows fast allocation of space for inputs. Forms are spaced using the class <b>pure-input-*</b> in a similar fasion to grids. Inputs can also be set to required using the attribute 'required', disabled with the attribue 'disabled' and readonly with the attribute 'readonly. Inputs can be rounded using the class <b>pure-input-rounded.</b></p>
+
+    <p>Example of input styles:</p>
+
+    <form class="pure-form pure-form-stacked">
+        <input class="pure-input-1" type="text" placeholder="1-1 Required" required>
+        <input class="pure-input-1-2" type="text" placeholder="1-2 Disabled" disabled>
+        <input class="pure-input-1-3" type="text" placeholder="1-3 Readonly" readonly>
+        <input class="pure-input-1-3 pure-input-rounded" type="text" placeholder="1-3 Rounded">
+    </form>
+
+    <h3>Other form details</h3>
+    <p>In order to get checkboxes and radio inputs to work properly with pure, add the <b>pure-checkbox</b> or <b>pure-radio</b> classes to the inputs.</p>
+
+    <p>Example of checkboxes and radio</p>
+    <form class="pure-form">
+        <label for="one" class="pure-checkbox">
+            <input id="one" type="checkbox" value="">
+            Checkbox!
+        </label>
+        <label for="two" class="pure-radio">
+            <input id="two" type="radio" name="radios" value="two" checked>
+            Radio One!
+        </label>
+        <label for="three" class="pure-radio">
+            <input id="three" type="radio" name="radios" value="three">
+            Radio Two!
+        </label>
+    </form>
+
+    <hr>
+    <h1>Pure Buttons for Clicking</h1>
+    <p>In the Pure framework, buttons are extremely simple to utilize. The base button class is called <b>pure-button</b>. Special cases can be applied to a button with one other class. Pure supports button types for disabled, active, and primary. For any other styles, Pure expects a developer to be able to create their own CSS coloring or sizing options. Buttons can be grouped in pure using the <b>pure-button-group</b> class.</p>
+
+    <h3>Button Examples:</h3>
+    <p>Your average ordinary default button:</p>
+    <button class="pure-button">Default Button</button>
+
+    <p>A disabled button:</p>
+    <button class="pure-button pure-button-disabled">Disabled Button</button>
+
+    <p>An active button:</p>
+    <button class="pure-button pure-button-active">Active Button</button>
+
+    <p>The primary button:</p>
+    <button class="pure-button pure-button-primary">Primary Button</button>
+
+    <p>A group of buttons</p>
+    <div class="pure-button-group" role="group" aria-label="...">
+        <button class="pure-button">Default Button</button>
+        <button class="pure-button pure-button-disabled">Disabled Button</button>
+        <button class="pure-button pure-button-active">Active Button</button>
+        <button class="pure-button pure-button-primary">Primary Button</button>
+    </div>
+
+    <div>
+        <h1>Pure Tables</h1>
+        <p>In Pure, tables are declared with the class <b>pure-table</b>. There are three subtypes of tables including bordered tables with the class <b>pure-table-bordered</b>, horizontal border tables with the class <b>pure-table-horizontal</b>, and striped tables with the class <b>pure-table-striped</b>.</p>
+
+        <h3>Table Examples:</h3>
+        <p>The default table with class <b>pure-table</b>:</p>
+        <table class="pure-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Fruit</th>
+                    <th>Color</th>
+                    <th>Smoothies?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Banana</td>
+                    <td>Yellow</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Strawberry</td>
+                    <td>Red</td>
+                    <td>Absolutely</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Orange</td>
+                    <td>Orange</td>
+                    <td>Please don't</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Add borders with the <b>pure-table-bordered</b> class:</p>
+        <table class="pure-table pure-table-bordered">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Fruit</th>
+                    <th>Color</th>
+                    <th>Smoothies?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Banana</td>
+                    <td>Yellow</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Strawberry</td>
+                    <td>Red</td>
+                    <td>Absolutely</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Orange</td>
+                    <td>Orange</td>
+                    <td>Please don't</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>To get a table with horizontal borders use the class <b>pure-table-horiztonal</b>:</p>
+        <table class="pure-table pure-table-horizontal">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Fruit</th>
+                    <th>Color</th>
+                    <th>Smoothies?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Banana</td>
+                    <td>Yellow</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Strawberry</td>
+                    <td>Red</td>
+                    <td>Absolutely</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Orange</td>
+                    <td>Orange</td>
+                    <td>Please don't</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>To get a table with stripes use the class <b>pure-table-striped</b></p>
+        <table class="pure-table pure-table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Fruit</th>
+                    <th>Color</th>
+                    <th>Smoothies?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Banana</td>
+                    <td>Yellow</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Strawberry</td>
+                    <td>Red</td>
+                    <td>Absolutely</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Orange</td>
+                    <td>Orange</td>
+                    <td>Please don't</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <hr>
+
+    <div>
+        <h1>Pure Menus</h1>
+        <p>In Pure, menus are vertical unless a different class is set. As a good warning, they do take up their whole container, so if you use a default menu and don't setup a custom class for the width it will take up as much space as possible. Pure recommends setting the restricted width using a display: inline-block; CSS style. That way, the menu will only ever take up its needed space. Pure has a lot of options while keeping to the basic. supports vertical menues, horizontal menus, and scrollable menus. It also supports adding active or disabled items and dropdowns. To use a menu in Pure, declare a div with the class <b>pure-menu</b>. Most menus should also have a span with a class <b>pure-menu-heading</b>. To add items into the menu, add a unordered list with class <b>pure-menu-list</b> with items of class <b>pure-menu-item</b> and links of class <b>pure-menu-link</b>.</p>
+
+        <p>The default vertical list with class <b>pure-menu</b>:</p>
+        <div class="pure-menu" style="width: 10em;">
+            <span class="pure-menu-heading">Exploration 2</span>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 1</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 2</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 3</a></li>
+            </ul>
+        </div>
+
+        <p>A scrollable vertical menu with class <b>pure-menu-scrollable</b> and a custom class <b>vertical-scroll</b>:</p>
+        <div class="pure-menu pure-menu-scrollable vertical-scroll">
+            <span class="pure-menu-heading">Exploration 2</span>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 1</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 2</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 3</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 4</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 5</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 6</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 7</a></li>
+            </ul>
+        </div>
+
+        <p>The horizontal list by adding class <b>pure-menu-horizontal</b>:</p>
+        <div class="pure-menu pure-menu-horizontal">
+            <span class="pure-menu-heading">Exploration 2</span>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 1</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 2</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 3</a></li>
+            </ul>
+        </div>
+
+        <p>A scrollable horizontal list by adding class <b>pure-menu-scrollable</b> and custom class to limit width <b>horizontal-scroll</b>:</p>
+        <div class="pure-menu pure-menu-horizontal pure-menu-scrollable horizontal-scroll">
+            <span class="pure-menu-heading">Exploration 2</span>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 1</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 2</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 3</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 4</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 5</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 6</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 7</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 8</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 9</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 10</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 11</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 12</a></li>
+            </ul>
+        </div>
+
+        <p>To show an item as selected or disabled, use the <b>pure-menu-selected</b> or <b>pure-menu-disabled</b> classes:</p>
+        <div class="pure-menu pure-menu-horizontal">
+            <span class="pure-menu-heading">Exploration 2</span>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item pure-menu-selected"><a href="" class="pure-menu-link">Item 1</a></li>
+                <li class="pure-menu-item pure-menu-disabled"><a href="" class="pure-menu-link">Item 2</a></li>
+                <li class="pure-menu-item"><a href="" class="pure-menu-link">Item 3</a></li>
+            </ul>
+        </div>
+
+        <p>To add a dropdown, use the class <b>pure-menu-has-children</b> and <b>pure-menu-allow-hover</b> on a list item and then start an unordered list with class <b>pure-menu-children</b>:</p>
+        <div class="pure-menu pure-menu-horizontal">
+            <span class="pure-menu-heading">Exploration 2</span>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item pure-menu"><a href="" class="pure-menu-link">Item 1</a></li>
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover"><a href="" class="pure-menu-link">Item 2</a>
+                <ul class="pure-menu-children">
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">SubMenu Item 1</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">SubMenu Item 2</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">SubMenu Item 3</a></li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+</html>
